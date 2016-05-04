@@ -1,4 +1,4 @@
-![CF](https://i.imgur.com/7v5ASc8.png) 04-templates
+![CF](https://i.imgur.com/7v5ASc8.png) Lab 04: Templates
 =======
 [![Build Status](https://travis-ci.org/codefellows-seattle-301d4/04-templates.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/04-templates)
 
