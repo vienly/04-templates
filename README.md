@@ -1,5 +1,6 @@
 ![CF](https://i.imgur.com/7v5ASc8.png) 04-templates
 =======
+[![Build Status](https://travis-ci.org/codefellows-seattle-301d4/04-templates.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d4/04-templates)
 
 Fix up the blog codebase, so it's properly using Handlebars templates.
 
