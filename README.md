@@ -12,10 +12,10 @@ You should be familiar with the pair flow by now. If not, review previous instru
 1. Update your article `.toHTML` method to use Handlebars
 1. You may find it useful to attach some additional properties to your article object, before you hand it off to the template.
 
-# TODOs: Stretch Goals
-1. Look at all that duplicated markup in your `#filter` list items! Looks like a good opportunity to use a template. Make a small template for filters, and re-render the list once you have data to populate it with.
+## Stretch Goals:
+1. Look at all that duplicated markup in your `#filter` list items! Looks like a good opportunity to use a template. Make a small template for each filter, and re-render the list once you have data to populate it with.
 
-Find those `TODO` items in the codebase, and tackle each one of them.
+Now find those `TODO` items in the codebase, and tackle each one of them!
 
 1. Driver: Ensure you copy the starter code folder to a new folder named for your pair!
 1. Now cd into that new folder. This is where you will write code.
