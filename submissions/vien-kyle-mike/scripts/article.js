@@ -1,4 +1,6 @@
 var articles = [];
+var existingAuthors = [];
+var existingCategories = [];
 
 function Article (opts) {
   this.author = opts.author;
@@ -30,6 +32,18 @@ Article.prototype.toHtml = function() {
   return template(this);
 };
 
+Article.prototype.populateAuthorFilter = function(){
+  var $source = $('#author-filter-template').html();
+  var template = Handlebars.compile($source);
+  return template(this);
+};
+
+Article.prototype.populateCategoryFilter = function(){
+  var $source = $('#category-filter-template').html();
+  var template = Handlebars.compile($source);
+  return template(this);
+};
+
 ourLocalData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
@@ -39,5 +53,11 @@ ourLocalData.forEach(function(ele) {
 });
 
 articles.forEach(function(a){
-  $('#articles').append(a.toHtml());
+  var $articles = $('#articles');
+  $articles.append(a.toHtml());
+  $('#author-filter').append(a.populateAuthorFilter());
+  $('#category-filter').append(a.populateCategoryFilter());
+  $('select option').each(function(){
+    $(this).siblings('[value="'+ this.value+'"]').remove();
+  });
 });
